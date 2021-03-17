@@ -94,7 +94,7 @@ def getForecastArray():
     response.raise_for_status()
 
     results = response.json()
-    return results()
+    return results
 
 def getDayTemp():
     results = getForecastArray()

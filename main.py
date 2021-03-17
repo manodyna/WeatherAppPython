@@ -10,7 +10,9 @@
 from controllers import WeatherService
 
 # creating objects
-weather = WeatherService.getWeatherArray()
+# weather = WeatherService.getWeatherArray()
+from views.MainView import MainView
+
 coord = WeatherService.getCoord()
 main = WeatherService.getWeatherMain()
 description = WeatherService.getWeatherDescription()
@@ -29,3 +31,4 @@ nightTemp = WeatherService.getNightTemp()
 # nightTempFeelsLike = WeatherService.getNightTempFeelsLike()
 # forecastDescription = WeatherService.getDescription()
 print(description)
+MainView()

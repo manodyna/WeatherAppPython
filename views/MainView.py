@@ -51,15 +51,15 @@ class MainView():
 
 
     # Theme for the respective time the application is used
-    # if int((dt.strftime('%I'))) >=18 and int((dt.strftime('%I')))<=5 :
-    #     img = ImageTk.PhotoImage(Image.open('moon.jpg'))
-    #     panel = Label(root, image=img)
-    #     panel.place(x=475, y=150)
-    # else:
-    #     img = ImageTk.PhotoImage(Image.open('sun.png'))
-    #     panel = Label(root, image=img)
-    #     panel.place(x=475, y=150)
-    #
+    if int((dt.strftime('%I'))) >=18 and int((dt.strftime('%I')))<=5 :
+        img = ImageTk.PhotoImage(Image.open('./moon.jpg'))
+        panel = Label(root, image=img)
+        panel.place(x=475, y=150)
+    else:
+        img = ImageTk.PhotoImage(Image.open('./sun.png'))
+        panel = Label(root, image=img)
+        panel.place(x=475, y=150)
+
     #
     # #Cities
     city_name = StringVar()
